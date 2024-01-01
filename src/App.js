@@ -28,9 +28,9 @@ const App = () => {
 
       return fromDateCondition && toDateCondition && branchCondition && typeCondition && statusCondition;
     });
-    console.log('Search Term:', searchTerm);
-    console.log('Filter Params:', filterParams);
-    console.log('Filtered Data:', dateFilteredData);
+    // console.log('Search Term:', searchTerm);
+    // console.log('Filter Params:', filterParams);
+    // console.log('Filtered Data:', dateFilteredData);
     setFilteredData(dateFilteredData.length > 0 ? dateFilteredData : []);
   }, [searchTerm, filterParams]);
   const handleFilterChange = params => {
